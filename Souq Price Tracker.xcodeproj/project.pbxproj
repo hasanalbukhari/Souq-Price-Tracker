@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18020F251C8265F800D60964 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18020F241C8265F800D60964 /* libsqlite3.tbd */; };
+		18020F281C83331800D60964 /* ProductController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18020F271C83331800D60964 /* ProductController.m */; settings = {ASSET_TAGS = (); }; };
+		18020F2B1C83391900D60964 /* PriceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18020F2A1C83391900D60964 /* PriceCell.m */; settings = {ASSET_TAGS = (); }; };
+		18020F2E1C83478600D60964 /* ProductParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 18020F2D1C83478600D60964 /* ProductParser.m */; settings = {ASSET_TAGS = (); }; };
+		18020F311C83515800D60964 /* Offer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18020F301C83515800D60964 /* Offer.m */; settings = {ASSET_TAGS = (); }; };
+		183F8F8D1C807664004CEBFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F8F8C1C807664004CEBFC /* main.m */; };
+		183F8F901C807664004CEBFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F8F8F1C807664004CEBFC /* AppDelegate.m */; };
+		183F8F981C807664004CEBFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183F8F971C807664004CEBFC /* Assets.xcassets */; };
+		183F8FC91C80890A004CEBFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183F8FC71C80890A004CEBFC /* LaunchScreen.storyboard */; };
+		183F8FCA1C80890A004CEBFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183F8FC81C80890A004CEBFC /* Main.storyboard */; };
+		183F90021C808CEC004CEBFC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F8FFF1C808CEC004CEBFC /* LoginViewController.m */; };
+		183F90031C808CEC004CEBFC /* MasterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F90011C808CEC004CEBFC /* MasterController.m */; };
+		183F90151C808D16004CEBFC /* UserDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F90141C808D16004CEBFC /* UserDetails.m */; };
+		183F90201C808DB2004CEBFC /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F90171C808DB2004CEBFC /* Common.m */; };
+		183F90211C808DB2004CEBFC /* FileLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F90191C808DB2004CEBFC /* FileLogging.m */; };
+		183F90221C808DB2004CEBFC /* HttpHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F901B1C808DB2004CEBFC /* HttpHandler.m */; };
+		183F90231C808DB2004CEBFC /* Singlton.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F901D1C808DB2004CEBFC /* Singlton.m */; };
+		183F90241C808DB2004CEBFC /* StylingDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F901F1C808DB2004CEBFC /* StylingDetails.m */; };
+		183F90291C808DF9004CEBFC /* RoundedCornersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F90261C808DF9004CEBFC /* RoundedCornersView.m */; };
+		183F902A1C808DF9004CEBFC /* RoundedCornersButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F90281C808DF9004CEBFC /* RoundedCornersButton.m */; };
+		183F90301C80A01A004CEBFC /* APIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F902F1C80A01A004CEBFC /* APIHelper.m */; };
+		183F90321C80A8CD004CEBFC /* api_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 183F90311C80A8CD004CEBFC /* api_config.plist */; };
+		183F90351C80C8FA004CEBFC /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F90341C80C8FA004CEBFC /* LoadingView.m */; };
+		183F90371C80C906004CEBFC /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183F90361C80C906004CEBFC /* LoadingView.xib */; };
+		183F90391C80C95C004CEBFC /* Base.strings in Resources */ = {isa = PBXBuildFile; fileRef = 183F90381C80C95C004CEBFC /* Base.strings */; };
+		183F903C1C80C968004CEBFC /* LanguageDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F903B1C80C968004CEBFC /* LanguageDetails.m */; };
+		183F903F1C81A760004CEBFC /* ProductTypesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F903E1C81A760004CEBFC /* ProductTypesController.m */; };
+		183F90421C81BE87004CEBFC /* ProductType.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F90411C81BE87004CEBFC /* ProductType.m */; };
+		183F90451C81BF4F004CEBFC /* ProductTypesParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F90441C81BF4F004CEBFC /* ProductTypesParser.m */; };
+		183F904A1C81C7F8004CEBFC /* ProductTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F90491C81C7F8004CEBFC /* ProductTypeCell.m */; };
+		183F904D1C81EDAA004CEBFC /* ProductsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F904C1C81EDAA004CEBFC /* ProductsController.m */; };
+		183F90501C81FD2D004CEBFC /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F904F1C81FD2D004CEBFC /* ProductCell.m */; };
+		183F90531C820B41004CEBFC /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F90521C820B41004CEBFC /* Product.m */; };
+		183F90561C820CE2004CEBFC /* ProductsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F90551C820CE2004CEBFC /* ProductsParser.m */; };
+		189FB1881C825CF300BFF820 /* DBLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 189FB1871C825CF300BFF820 /* DBLayer.m */; };
+		189FB18E1C82627400BFF820 /* FavoritesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189FB18D1C82627400BFF820 /* FavoritesController.m */; };
+		C310F8CABCD9072B564B1415 /* libPods-Souq Price Tracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAEF114CFCED1F0388AE63E /* libPods-Souq Price Tracker.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0BAEF114CFCED1F0388AE63E /* libPods-Souq Price Tracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Souq Price Tracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18020F241C8265F800D60964 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		18020F261C83331800D60964 /* ProductController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductController.h; sourceTree = "<group>"; };
+		18020F271C83331800D60964 /* ProductController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductController.m; sourceTree = "<group>"; };
+		18020F291C83391900D60964 /* PriceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceCell.h; sourceTree = "<group>"; };
+		18020F2A1C83391900D60964 /* PriceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceCell.m; sourceTree = "<group>"; };
+		18020F2C1C83478600D60964 /* ProductParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductParser.h; sourceTree = "<group>"; };
+		18020F2D1C83478600D60964 /* ProductParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductParser.m; sourceTree = "<group>"; };
+		18020F2F1C83515800D60964 /* Offer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Offer.h; sourceTree = "<group>"; };
+		18020F301C83515800D60964 /* Offer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Offer.m; sourceTree = "<group>"; };
+		183F8F881C807664004CEBFC /* Souq Price Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Souq Price Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		183F8F8C1C807664004CEBFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		183F8F8E1C807664004CEBFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		183F8F8F1C807664004CEBFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		183F8F971C807664004CEBFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		183F8F9C1C807664004CEBFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183F8FC71C80890A004CEBFC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		183F8FC81C80890A004CEBFC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		183F8FFE1C808CEC004CEBFC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		183F8FFF1C808CEC004CEBFC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		183F90001C808CEC004CEBFC /* MasterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterController.h; sourceTree = "<group>"; };
+		183F90011C808CEC004CEBFC /* MasterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterController.m; sourceTree = "<group>"; };
+		183F90131C808D16004CEBFC /* UserDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetails.h; sourceTree = "<group>"; };
+		183F90141C808D16004CEBFC /* UserDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetails.m; sourceTree = "<group>"; };
+		183F90161C808DB2004CEBFC /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		183F90171C808DB2004CEBFC /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		183F90181C808DB2004CEBFC /* FileLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileLogging.h; sourceTree = "<group>"; };
+		183F90191C808DB2004CEBFC /* FileLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileLogging.m; sourceTree = "<group>"; };
+		183F901A1C808DB2004CEBFC /* HttpHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpHandler.h; sourceTree = "<group>"; };
+		183F901B1C808DB2004CEBFC /* HttpHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpHandler.m; sourceTree = "<group>"; };
+		183F901C1C808DB2004CEBFC /* Singlton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singlton.h; sourceTree = "<group>"; };
+		183F901D1C808DB2004CEBFC /* Singlton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singlton.m; sourceTree = "<group>"; };
+		183F901E1C808DB2004CEBFC /* StylingDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StylingDetails.h; sourceTree = "<group>"; };
+		183F901F1C808DB2004CEBFC /* StylingDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StylingDetails.m; sourceTree = "<group>"; };
+		183F90251C808DF9004CEBFC /* RoundedCornersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedCornersView.h; sourceTree = "<group>"; };
+		183F90261C808DF9004CEBFC /* RoundedCornersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedCornersView.m; sourceTree = "<group>"; };
+		183F90271C808DF9004CEBFC /* RoundedCornersButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedCornersButton.h; sourceTree = "<group>"; };
+		183F90281C808DF9004CEBFC /* RoundedCornersButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedCornersButton.m; sourceTree = "<group>"; };
+		183F902D1C8092AF004CEBFC /* Souq-Price-Tracker-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Souq-Price-Tracker-Prefix.pch"; sourceTree = "<group>"; };
+		183F902E1C80A01A004CEBFC /* APIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIHelper.h; sourceTree = "<group>"; };
+		183F902F1C80A01A004CEBFC /* APIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIHelper.m; sourceTree = "<group>"; };
+		183F90311C80A8CD004CEBFC /* api_config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = api_config.plist; sourceTree = "<group>"; };
+		183F90331C80C8FA004CEBFC /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		183F90341C80C8FA004CEBFC /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		183F90361C80C906004CEBFC /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		183F90381C80C95C004CEBFC /* Base.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Base.strings; sourceTree = "<group>"; };
+		183F903A1C80C968004CEBFC /* LanguageDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageDetails.h; sourceTree = "<group>"; };
+		183F903B1C80C968004CEBFC /* LanguageDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageDetails.m; sourceTree = "<group>"; };
+		183F903D1C81A760004CEBFC /* ProductTypesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTypesController.h; sourceTree = "<group>"; };
+		183F903E1C81A760004CEBFC /* ProductTypesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductTypesController.m; sourceTree = "<group>"; };
+		183F90401C81BE87004CEBFC /* ProductType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductType.h; sourceTree = "<group>"; };
+		183F90411C81BE87004CEBFC /* ProductType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductType.m; sourceTree = "<group>"; };
+		183F90431C81BF4F004CEBFC /* ProductTypesParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTypesParser.h; sourceTree = "<group>"; };
+		183F90441C81BF4F004CEBFC /* ProductTypesParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductTypesParser.m; sourceTree = "<group>"; };
+		183F90481C81C7F8004CEBFC /* ProductTypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTypeCell.h; sourceTree = "<group>"; };
+		183F90491C81C7F8004CEBFC /* ProductTypeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductTypeCell.m; sourceTree = "<group>"; };
+		183F904B1C81EDAA004CEBFC /* ProductsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsController.h; sourceTree = "<group>"; };
+		183F904C1C81EDAA004CEBFC /* ProductsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsController.m; sourceTree = "<group>"; };
+		183F904E1C81FD2D004CEBFC /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCell.h; sourceTree = "<group>"; };
+		183F904F1C81FD2D004CEBFC /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
+		183F90511C820B41004CEBFC /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		183F90521C820B41004CEBFC /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		183F90541C820CE2004CEBFC /* ProductsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsParser.h; sourceTree = "<group>"; };
+		183F90551C820CE2004CEBFC /* ProductsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsParser.m; sourceTree = "<group>"; };
+		189FB1861C825CF300BFF820 /* DBLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLayer.h; sourceTree = "<group>"; };
+		189FB1871C825CF300BFF820 /* DBLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLayer.m; sourceTree = "<group>"; };
+		189FB18C1C82627400BFF820 /* FavoritesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesController.h; sourceTree = "<group>"; };
+		189FB18D1C82627400BFF820 /* FavoritesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesController.m; sourceTree = "<group>"; };
+		189FB18F1C82658400BFF820 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4E9927B2E74CB69DD38220C4 /* Pods-Souq Price Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Souq Price Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Souq Price Tracker/Pods-Souq Price Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		93AC56C0F562CA42C8AFEADA /* Pods-Souq Price Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Souq Price Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Souq Price Tracker/Pods-Souq Price Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		183F8F851C807664004CEBFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18020F251C8265F800D60964 /* libsqlite3.tbd in Frameworks */,
+				C310F8CABCD9072B564B1415 /* libPods-Souq Price Tracker.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B3094CFE41F5DEA22373139 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93AC56C0F562CA42C8AFEADA /* Pods-Souq Price Tracker.debug.xcconfig */,
+				4E9927B2E74CB69DD38220C4 /* Pods-Souq Price Tracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		183F8F7F1C807664004CEBFC = {
+			isa = PBXGroup;
+			children = (
+				183F8F8A1C807664004CEBFC /* Souq Price Tracker */,
+				183F8F891C807664004CEBFC /* Products */,
+				0B3094CFE41F5DEA22373139 /* Pods */,
+				43B0856931C75261D5DA77E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		183F8F891C807664004CEBFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				183F8F881C807664004CEBFC /* Souq Price Tracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		183F8F8A1C807664004CEBFC /* Souq Price Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				183F8F8E1C807664004CEBFC /* AppDelegate.h */,
+				183F8F8F1C807664004CEBFC /* AppDelegate.m */,
+				183F8FC81C80890A004CEBFC /* Main.storyboard */,
+				183F8FF91C808B1A004CEBFC /* Views */,
+				183F8FF81C808B0E004CEBFC /* Controllers */,
+				183F8FFC1C808B34004CEBFC /* Common */,
+				183F8FFD1C808B5E004CEBFC /* Customs */,
+				183F8FFB1C808B2E004CEBFC /* Parsers */,
+				183F8FFA1C808B27004CEBFC /* Entities */,
+				183F8F971C807664004CEBFC /* Assets.xcassets */,
+				183F8F8B1C807664004CEBFC /* Supporting Files */,
+			);
+			path = "Souq Price Tracker";
+			sourceTree = "<group>";
+		};
+		183F8F8B1C807664004CEBFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				183F8F9C1C807664004CEBFC /* Info.plist */,
+				183F90311C80A8CD004CEBFC /* api_config.plist */,
+				183F8F8C1C807664004CEBFC /* main.m */,
+				183F902D1C8092AF004CEBFC /* Souq-Price-Tracker-Prefix.pch */,
+				183F90381C80C95C004CEBFC /* Base.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		183F8FF81C808B0E004CEBFC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				183F90001C808CEC004CEBFC /* MasterController.h */,
+				183F90011C808CEC004CEBFC /* MasterController.m */,
+				183F8FFE1C808CEC004CEBFC /* LoginViewController.h */,
+				183F8FFF1C808CEC004CEBFC /* LoginViewController.m */,
+				183F903D1C81A760004CEBFC /* ProductTypesController.h */,
+				183F903E1C81A760004CEBFC /* ProductTypesController.m */,
+				183F904B1C81EDAA004CEBFC /* ProductsController.h */,
+				183F904C1C81EDAA004CEBFC /* ProductsController.m */,
+				189FB18C1C82627400BFF820 /* FavoritesController.h */,
+				189FB18D1C82627400BFF820 /* FavoritesController.m */,
+				18020F261C83331800D60964 /* ProductController.h */,
+				18020F271C83331800D60964 /* ProductController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		183F8FF91C808B1A004CEBFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				183F90361C80C906004CEBFC /* LoadingView.xib */,
+				183F8FC71C80890A004CEBFC /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		183F8FFA1C808B27004CEBFC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				183F90131C808D16004CEBFC /* UserDetails.h */,
+				183F90141C808D16004CEBFC /* UserDetails.m */,
+				183F90401C81BE87004CEBFC /* ProductType.h */,
+				183F90411C81BE87004CEBFC /* ProductType.m */,
+				183F90511C820B41004CEBFC /* Product.h */,
+				183F90521C820B41004CEBFC /* Product.m */,
+				18020F2F1C83515800D60964 /* Offer.h */,
+				18020F301C83515800D60964 /* Offer.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		183F8FFB1C808B2E004CEBFC /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				183F90431C81BF4F004CEBFC /* ProductTypesParser.h */,
+				183F90441C81BF4F004CEBFC /* ProductTypesParser.m */,
+				183F90541C820CE2004CEBFC /* ProductsParser.h */,
+				183F90551C820CE2004CEBFC /* ProductsParser.m */,
+				18020F2C1C83478600D60964 /* ProductParser.h */,
+				18020F2D1C83478600D60964 /* ProductParser.m */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		183F8FFC1C808B34004CEBFC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				183F901C1C808DB2004CEBFC /* Singlton.h */,
+				183F901D1C808DB2004CEBFC /* Singlton.m */,
+				183F90161C808DB2004CEBFC /* Common.h */,
+				183F90171C808DB2004CEBFC /* Common.m */,
+				183F90181C808DB2004CEBFC /* FileLogging.h */,
+				183F90191C808DB2004CEBFC /* FileLogging.m */,
+				183F901A1C808DB2004CEBFC /* HttpHandler.h */,
+				183F901B1C808DB2004CEBFC /* HttpHandler.m */,
+				183F901E1C808DB2004CEBFC /* StylingDetails.h */,
+				183F901F1C808DB2004CEBFC /* StylingDetails.m */,
+				183F902E1C80A01A004CEBFC /* APIHelper.h */,
+				183F902F1C80A01A004CEBFC /* APIHelper.m */,
+				183F903A1C80C968004CEBFC /* LanguageDetails.h */,
+				183F903B1C80C968004CEBFC /* LanguageDetails.m */,
+				189FB1861C825CF300BFF820 /* DBLayer.h */,
+				189FB1871C825CF300BFF820 /* DBLayer.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		183F8FFD1C808B5E004CEBFC /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				183F90471C81C7C8004CEBFC /* Cells */,
+				183F90331C80C8FA004CEBFC /* LoadingView.h */,
+				183F90341C80C8FA004CEBFC /* LoadingView.m */,
+				183F90251C808DF9004CEBFC /* RoundedCornersView.h */,
+				183F90261C808DF9004CEBFC /* RoundedCornersView.m */,
+				183F90271C808DF9004CEBFC /* RoundedCornersButton.h */,
+				183F90281C808DF9004CEBFC /* RoundedCornersButton.m */,
+			);
+			path = Customs;
+			sourceTree = "<group>";
+		};
+		183F90471C81C7C8004CEBFC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				183F90481C81C7F8004CEBFC /* ProductTypeCell.h */,
+				183F90491C81C7F8004CEBFC /* ProductTypeCell.m */,
+				183F904E1C81FD2D004CEBFC /* ProductCell.h */,
+				183F904F1C81FD2D004CEBFC /* ProductCell.m */,
+				18020F291C83391900D60964 /* PriceCell.h */,
+				18020F2A1C83391900D60964 /* PriceCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		43B0856931C75261D5DA77E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18020F241C8265F800D60964 /* libsqlite3.tbd */,
+				189FB18F1C82658400BFF820 /* libsqlite3.dylib */,
+				0BAEF114CFCED1F0388AE63E /* libPods-Souq Price Tracker.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		183F8F871C807664004CEBFC /* Souq Price Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 183F8F9F1C807664004CEBFC /* Build configuration list for PBXNativeTarget "Souq Price Tracker" */;
+			buildPhases = (
+				4A1C11694214F659C2371FF2 /* Check Pods Manifest.lock */,
+				183F8F841C807664004CEBFC /* Sources */,
+				183F8F851C807664004CEBFC /* Frameworks */,
+				183F8F861C807664004CEBFC /* Resources */,
+				555C8F061D204DD74710E4EC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Souq Price Tracker";
+			productName = "Souq Price Tracker";
+			productReference = 183F8F881C807664004CEBFC /* Souq Price Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		183F8F801C807664004CEBFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Hasan;
+				TargetAttributes = {
+					183F8F871C807664004CEBFC = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 183F8F831C807664004CEBFC /* Build configuration list for PBXProject "Souq Price Tracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 183F8F7F1C807664004CEBFC;
+			productRefGroup = 183F8F891C807664004CEBFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				183F8F871C807664004CEBFC /* Souq Price Tracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		183F8F861C807664004CEBFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183F8FC91C80890A004CEBFC /* LaunchScreen.storyboard in Resources */,
+				183F90391C80C95C004CEBFC /* Base.strings in Resources */,
+				183F90321C80A8CD004CEBFC /* api_config.plist in Resources */,
+				183F8F981C807664004CEBFC /* Assets.xcassets in Resources */,
+				183F8FCA1C80890A004CEBFC /* Main.storyboard in Resources */,
+				183F90371C80C906004CEBFC /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A1C11694214F659C2371FF2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		555C8F061D204DD74710E4EC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Souq Price Tracker/Pods-Souq Price Tracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		183F8F841C807664004CEBFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183F903C1C80C968004CEBFC /* LanguageDetails.m in Sources */,
+				183F90291C808DF9004CEBFC /* RoundedCornersView.m in Sources */,
+				183F90301C80A01A004CEBFC /* APIHelper.m in Sources */,
+				183F904D1C81EDAA004CEBFC /* ProductsController.m in Sources */,
+				183F90201C808DB2004CEBFC /* Common.m in Sources */,
+				183F90501C81FD2D004CEBFC /* ProductCell.m in Sources */,
+				183F90451C81BF4F004CEBFC /* ProductTypesParser.m in Sources */,
+				183F90231C808DB2004CEBFC /* Singlton.m in Sources */,
+				183F90211C808DB2004CEBFC /* FileLogging.m in Sources */,
+				183F8F901C807664004CEBFC /* AppDelegate.m in Sources */,
+				183F90031C808CEC004CEBFC /* MasterController.m in Sources */,
+				18020F2B1C83391900D60964 /* PriceCell.m in Sources */,
+				183F902A1C808DF9004CEBFC /* RoundedCornersButton.m in Sources */,
+				183F90151C808D16004CEBFC /* UserDetails.m in Sources */,
+				183F90531C820B41004CEBFC /* Product.m in Sources */,
+				18020F311C83515800D60964 /* Offer.m in Sources */,
+				183F90351C80C8FA004CEBFC /* LoadingView.m in Sources */,
+				189FB1881C825CF300BFF820 /* DBLayer.m in Sources */,
+				183F8F8D1C807664004CEBFC /* main.m in Sources */,
+				183F90241C808DB2004CEBFC /* StylingDetails.m in Sources */,
+				183F903F1C81A760004CEBFC /* ProductTypesController.m in Sources */,
+				18020F2E1C83478600D60964 /* ProductParser.m in Sources */,
+				18020F281C83331800D60964 /* ProductController.m in Sources */,
+				183F904A1C81C7F8004CEBFC /* ProductTypeCell.m in Sources */,
+				183F90421C81BE87004CEBFC /* ProductType.m in Sources */,
+				189FB18E1C82627400BFF820 /* FavoritesController.m in Sources */,
+				183F90561C820CE2004CEBFC /* ProductsParser.m in Sources */,
+				183F90221C808DB2004CEBFC /* HttpHandler.m in Sources */,
+				183F90021C808CEC004CEBFC /* LoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		183F8F9D1C807664004CEBFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		183F8F9E1C807664004CEBFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		183F8FA01C807664004CEBFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93AC56C0F562CA42C8AFEADA /* Pods-Souq Price Tracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/Souq-Price-Tracker-Prefix.pch";
+				INFOPLIST_FILE = "Souq Price Tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.souq.Souq-Price-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		183F8FA11C807664004CEBFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E9927B2E74CB69DD38220C4 /* Pods-Souq Price Tracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/Souq-Price-Tracker-Prefix.pch";
+				INFOPLIST_FILE = "Souq Price Tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.souq.Souq-Price-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		183F8F831C807664004CEBFC /* Build configuration list for PBXProject "Souq Price Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183F8F9D1C807664004CEBFC /* Debug */,
+				183F8F9E1C807664004CEBFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		183F8F9F1C807664004CEBFC /* Build configuration list for PBXNativeTarget "Souq Price Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183F8FA01C807664004CEBFC /* Debug */,
+				183F8FA11C807664004CEBFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 183F8F801C807664004CEBFC /* Project object */;
+}

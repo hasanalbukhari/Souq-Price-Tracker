@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AuthorizationURI</key>
+	<string>oauth/authorize</string>
+	<key>BaseUrl</key>
+	<string>https://api.souq.com</string>
+	<key>PermissionScope</key>
+	<string>discovery,OAuth2.0,customer_profile,cart_management,customer_demographics,product_reviews</string>
+	<key>AppId</key>
+	<string>46516075</string>
+	<key>AppSecret</key>
+	<string>qU4Kl1WRvlERcDnzdrqS</string>
+	<key>RedirectURL</key>
+	<string>SouqPriceTracker://authorization/feedback/</string>
+	<key>GetAccessTokenURI</key>
+	<string>oauth/access_token</string>
+	<key>ProductTypesURI</key>
+	<string>products/types</string>
+	<key>ProductsURI</key>
+	<string>products</string>
+	<key>ProductURI</key>
+	<string>products/%@</string>
+	<key>APIVersion</key>
+	<string>v1</string>
+</dict>
+</plist>

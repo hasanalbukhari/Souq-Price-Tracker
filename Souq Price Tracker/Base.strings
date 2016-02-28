@@ -1,0 +1,89 @@
+/* 
+  Base.strings
+  Kader
+
+  Created by Devloper on 8/19/15.
+  Copyright © 2015 Devloper. All rights reserved.
+*/
+
+"Language" = "English";
+
+"English" = "English";
+
+"Arabic" = "عربي";
+
+"AppName" = "Souq Price Tracker";
+
+"Login" = "Connect to Souq.com";
+
+"Cancel" = "Cancel";
+
+"RememberMe" = "Remember Me";
+
+"Username" = "Username";
+
+"Password" = "Password";
+
+"ValidationError" = "Validation Error";
+
+"EmailValidationError" = "Please, enter a valid e-mail address!";
+
+"PasswordShort" = "Password can't be less that 5 characters!";
+
+"EmailIsEmpty" = "Email is empty!";
+
+"PasswordIsEmpty" = "Password is empty!";
+
+"ServerUnreachable" = "Internet Connection Problem!";
+
+"WeWillGetBackToYou" = "We will get back to you ...";
+
+"Fail" = "Something Wrong Happen";
+
+"LoginFailed" = "Login Failed";
+
+"TryAgain" = "Try again!";
+
+"FailTryAgain" = "Something Wrong Happen! Try again.";
+
+"Back" = "Back";
+
+"CheckOut" = "Check Out";
+
+"Waiting" = "Waiting ...";
+
+"Interests" = "What interests you?";
+
+"FetchingProductTypes" = "Fetching Product Types ...";
+
+"FetchingProducts" = "Fetching Products ...";
+
+"ProductTypes" = "Product Types";
+
+"NoMore" = "No more to show!";
+
+"OK" = "Ok";
+
+"Skip" = "Skip !";
+
+"Products" = "Products";
+
+"Shope" = "Shop";
+
+"NoTypesSelected" = "Tell us what are you interested in. so we can help you!";
+
+"Favorites" = "Favorites";
+
+"NewArrivals" = "New Arrivals";
+
+"BuyNow" = "BUY NOW";
+
+"AddToCart" = "ADD TO CART";
+
+"FetchingProductPrices" = "Fetching Prices ...";
+
+"DaysAgo" = "%d days ago";
+
+"LessThanDay" = "Less than a day";
+
+"PreviousPrices" = "Previous prices";

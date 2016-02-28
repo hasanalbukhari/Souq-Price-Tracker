@@ -1,0 +1,5 @@
+#include "Pods-Souq Price Tracker-SDWebImage.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/SDWebImage" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CocoaLumberjack" "${PODS_ROOT}/Headers/Public/SDWebImage"
+OTHER_LDFLAGS = ${PODS_SOUQ_PRICE_TRACKER_SDWEBIMAGE_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}

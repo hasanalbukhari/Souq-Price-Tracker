@@ -1,0 +1,43 @@
+//
+//  Souq-Price-Tracker-Prefix.pch
+//  Souq Price Tracker
+//
+//  Created by Hasan S. Al-Bukhari on 2/26/16.
+//  Copyright © 2016 Hasan. All rights reserved.
+//
+
+#import "DDLog.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
+#import "Common.h"
+
+#ifndef Souq_Price_Tracker_Prefix_pch
+#define Souq_Price_Tracker_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Souq_Price_Tracker_Prefix_pch */
+
+#define DEVICE UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ? @"ipad" : @"iphone"
+
+#define connection_time_out 60.0
+#define ConnectionAuthenticationFailure @"Authentication Failure!"
+
+#define PListBaseUrlKey @"BaseUrl"
+#define PListAuthorizationUriKey @"AuthorizationURI"
+#define PListAppIdKey @"AppId"
+#define PListAppSecretKey @"AppSecret"
+#define PListPermissionScopeKey @"PermissionScope"
+#define PListRedirectURLKey @"RedirectURL"
+#define PListGetAccessTokenURIKey @"GetAccessTokenURI"
+#define PListProductTypesURIKey @"ProductTypesURI"
+#define PListProductsURIKey @"ProductsURI"
+#define PListProductURIKey @"ProductURI"
+#define PListApiVersionKey @"APIVersion"
+
+#ifdef DEBUG
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+#else
+static const int ddLogLevel = LOG_LEVEL_ERROR;
+#endif
