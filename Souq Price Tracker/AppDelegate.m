@@ -56,7 +56,7 @@
         [[singlton apiHelper] userAuthorized:[dict valueForKey:@"code"]];
         
     } @catch (NSException *exception) {
-        NSLog(@"Deep Link ::::: URL Parsing Exception ::::: %@", [exception debugDescription]);
+        DDLogVerbose(@"Deep Link ::::: URL Parsing Exception ::::: %@", [exception debugDescription]);
         return  NO;
     }
 

@@ -77,70 +77,53 @@
 }
 
 - (IBAction)swipedLeft:(UISwipeGestureRecognizer *)sender {
-    
-    /* check if animating allowed
+    /* check if animating allowed:
      1. images exists
-     2. images are not being swiped right noew
-     3. not boundery image
-    */
-    if (images && images.count>0 && imageIndex<images.count-1 && !swiping) {
-        // increase image index
-        imageIndex++;
-        
-        // prepare for animation, put image in the right place out of screen before animation
-        nextRightConst.constant = -8;
-        nextLeftConst.constant = screenWidth;
-        [nextImageView sd_setImageWithURL:[[NSURL alloc] initWithString:[images objectAtIndex:imageIndex]]];
-        [self.view layoutIfNeeded];
-        
-        // set animation values
-        nextRightConst.constant = 8;
-        nextLeftConst.constant = 8;
-        imageLeftConst.constant = -100;
-        imageRightConst.constant = screenWidth;
-        swiping = YES;
-        
-        // animating
-        [UIView animateWithDuration:1.0 animations:^{
-            [self.view layoutIfNeeded];
-        } completion:^(BOOL finished) {
-            // re-place the productImageView in the screen and nextImageView out of screen
-            [productImageView sd_setImageWithURL:[[NSURL alloc] initWithString:[images objectAtIndex:imageIndex]]];
-            imageRightConst.constant = 8;
-            imageLeftConst.constant = 8;
-            nextRightConst.constant = -8;
-            nextLeftConst.constant = screenWidth;
-            [self.view layoutIfNeeded];
-            swiping = NO;
-        }];
+     2. images are not being swiped right now */
+    
+    if (images != nil && !swiping) {
+        imageIndex = (++imageIndex) % images.count;
+        [self animateToChangeImageWithValue:screenWidth animateToChangeImageWithValue:-8];
     }
 }
 
 - (IBAction)swipedRight:(UISwipeGestureRecognizer *)sender {
-    if (images != nil && images.count>0 && imageIndex>0 && !swiping ) {
-        imageIndex--;
-        
-        nextLeftConst.constant = -8;
-        nextRightConst.constant = screenWidth;
-        [nextImageView sd_setImageWithURL:[[NSURL alloc] initWithString:[images objectAtIndex:imageIndex]]];
-        [self.view layoutIfNeeded];
-        nextLeftConst.constant = 8;
-        nextRightConst.constant = 8;
-        imageLeftConst.constant = screenWidth;
-        imageRightConst.constant = -100;
-        swiping = YES;
-        [UIView animateWithDuration:1.0 animations:^{
-            [self.view layoutIfNeeded];
-        } completion:^(BOOL finished) {
-            [productImageView sd_setImageWithURL:[[NSURL alloc] initWithString:[images objectAtIndex:imageIndex]]];
-            imageLeftConst.constant = 8;
-            imageRightConst.constant = 8;
-            nextRightConst.constant = -8;
-            nextLeftConst.constant = screenWidth;
-            [self.view layoutIfNeeded];
-            swiping = NO;
-        }];
+    
+    if (images != nil && !swiping) {
+        imageIndex = (--imageIndex + images.count) % images.count;
+        [self animateToChangeImageWithValue:-8 animateToChangeImageWithValue:screenWidth];
     }
+}
+
+- (void)animateToChangeImageWithValue:(CGFloat)value1 animateToChangeImageWithValue:(CGFloat)value2 {
+        
+    // prepare for animation, put image in the right place out of screen before animation
+    nextRightConst.constant = value2;
+    nextLeftConst.constant = value1;
+    [nextImageView sd_setImageWithURL:[[NSURL alloc] initWithString:[images objectAtIndex:imageIndex]]];
+    [self.view layoutIfNeeded];
+    
+    // set animation values
+    nextRightConst.constant = 8;
+    nextLeftConst.constant = 8;
+    imageLeftConst.constant = value2;
+    imageRightConst.constant = value1;
+    swiping = YES;
+    
+    // animating
+    [UIView animateWithDuration:1.0 animations:^{
+        [self.view layoutIfNeeded];
+    } completion:^(BOOL finished) {
+        
+        // re-place the productImageView in the screen and nextImageView out of screen
+        [productImageView sd_setImageWithURL:[[NSURL alloc] initWithString:[images objectAtIndex:imageIndex]]];
+        imageRightConst.constant = 8;
+        imageLeftConst.constant = 8;
+        nextRightConst.constant = -8;
+        nextLeftConst.constant = screenWidth;
+        [self.view layoutIfNeeded];
+        swiping = NO;
+    }];
 }
 
 - (IBAction)favoriteGestureTapped:(UITapGestureRecognizer *)sender {
@@ -235,6 +218,8 @@
 - (void) orientationChanged:(NSNotification *)notification
 {
     screenWidth = self.view.frame.size.width;
+    nextRightConst.constant = -8;
+    nextLeftConst.constant = 10000;
 }
 
 @end

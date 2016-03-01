@@ -33,12 +33,12 @@
             NSString *sqLiteDb = [[libraryDirectoryURL URLByAppendingPathComponent:DataBaseName] path];
             
             if (sqlite3_open([sqLiteDb UTF8String], &_database) != SQLITE_OK) {
-                NSLog(@"Failed to open database!");
-                NSLog(@"Failed to open database at with error %s", sqlite3_errmsg(_database));
+                DDLogVerbose(@"Failed to open database!");
+                DDLogVerbose(@"Failed to open database at with error %s", sqlite3_errmsg(_database));
             }
         }
         @catch (NSException *exception) {
-            NSLog(@"Couldn't open database.");
+            DDLogVerbose(@"Couldn't open database.");
         }
     }
     return self;
@@ -65,12 +65,12 @@
             const char *sql_stmt = "CREATE TABLE IF NOT EXISTS ITEMS (ID INTEGER PRIMARY KEY, NAME TEXT, PRICE INTEGER, FORMATTED_PRICE TEXT, OFFER_PRICE INTEGER, OFFER_FORMATTED_PRICE TEXT, M_IMAGE TEXT, L_IMAGE TEXT);";
             
             if (sqlite3_exec(_database, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK) {
-                NSLog(@"Failed to create table");
+                DDLogVerbose(@"Failed to create table");
             }
             sqlite3_close(_database);//////////
         }
         else {
-            NSLog(@"Failed to open/create database");
+            DDLogVerbose(@"Failed to open/create database");
         }
     }
 }
